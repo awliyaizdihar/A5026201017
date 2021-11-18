@@ -88,12 +88,12 @@
                 <div class="links">
                     <a href="profil-mahasiswa_017.html">Tugas 1</a>
                     <a href="profil-css_017.html">Tugas 2</a>
-                    <a href="https://laravel-news.com">Tugas 3</a>
+                    <a href="button-bootstrap_017.html">Tugas 3</a>
                     <a href="praktikum01_017.html">Praktikum 1</a>
-                    <a href="https://nova.laravel.com">Tugas 4</a>
-                    <a href="etsnantiganti">Praktikum 2</a>
-                    <a href="">ETS</a>
-                    <a href="isiannama">Tugas PHP</a>
+                    <a href="tugas4">Tugas 4</a>
+                    <a href="praktikum2">Praktikum 2</a>
+                    <a href="ets">ETS</a>
+                    <a href="tugasphp">Tugas PHP</a>
                 </div>
             </div>
         </div>
