@@ -52,7 +52,7 @@ class AbsenController extends Controller
     public function update(Request $request)
     {
         //update data absen
-        DB::table('absen')->where('id', $request->id)->update([
+        DB::table('absen')->where('id', $request->ida)->update([
             'id' => $request->id,
             'id_pegawai' => $request->idp,
             'tanggal' => $request->tanggal,

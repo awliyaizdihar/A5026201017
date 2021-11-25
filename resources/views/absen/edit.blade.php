@@ -15,6 +15,7 @@
 	@foreach($absen as $a)
 	<form action="/absen/update" method="post">
 		{{ csrf_field() }}
+		<input type="hidden" name="ida" value="{{ $a->id }}"> <br/>
 		ID <input type="number" required="required" name="id" value="{{ $a->id }}"> <br/>
 		ID Pegawai <input type="number" required="required" name="idp" value="{{ $a->id_pegawai }}"> <br/>
 		Tanggal <input type="datetime-local" required="required" name="tanggal" value="{{ $a->tanggal }}"> <br/>
