@@ -1,40 +1,44 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Data Absensi</title>
-</head>
-<body>
+@extends('layout.bahagia')
 
-	<h2>Data Absensi</h2>
+@section('title', 'Data Absensi')
+@section('judulhalaman', 'Data Absensi')
 
-	<a href="/absen/tambah"> + Tambah Absensi Baru</a>
+@section('konten')
 
-	<br/>
-	<br/>
+<a href="/absen/tambah" class="btn btn-info" float-right> + Tambah Absensi Baru</a>
 
-	<table border="1">
-		<tr>
-			<th>ID</th>
-			<th>ID Pegawai</th>
-			<th>Tanggal</th>
-			<th>Status</th>
-			<th>Opsi</th>
-		</tr>
-		@foreach($absen as $a)
-		<tr>
-			<td>{{ $a->id }}</td>
-			<td>{{ $a->id_pegawai }}</td>
-			<td>{{ $a->tanggal }}</td>
-			<td>{{ $a->status }}</td>
-			<td>
-				<a href="/absen/edit/{{ $a->id }}">Edit</a>
-				|
-				<a href="/absen/hapus/{{ $a->id }}">Hapus</a>
-			</td>
-		</tr>
-		@endforeach
-	</table>
+<br />
+<br />
 
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>ID Pegawai</th>
+            <th>Tanggal</th>
+            <th>Status</th>
+            <th>Opsi</th>
+        </tr>
+    </thead>
+    @foreach($absen as $a)
+    <tr>
+        <td>{{ $a->IDPegawai }}</td>
+        <td>{{ $a->Tanggal }}</td>
+        <td>{{ $a->Status }}</td>
+        <td>
+            <a href="/absen/edit/{{ $a->ID }}">Edit</a>
+            |
+            <a href="/absen/hapus/{{ $a->ID }}">Hapus</a>
+        </td>
+    </tr>
+    @endforeach
+</table>
 
-</body>
-</html>
+<p>
+    Keterangan Status: <br>
+    H : Hadir <br>
+    I : Izin <br>
+    S : Sakit <br>
+    A : Alpha <br>
+</p>
+
+@endsection

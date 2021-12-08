@@ -45,3 +45,11 @@ Route::post('/absen/store','AbsenController@store');
 Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
+
+//route CRUD absennov
+Route::get('/absennov','AbsennovController@indexabsen');
+Route::get('/absennov/add','AbsennovController@add');
+Route::post('/absennov/store','AbsennovController@store');
+Route::get('/absennov/edit/{id}','AbsennovController@edit');
+Route::post('/absennov/update','AbsennovController@update');
+Route::get('/absennov/hapus/{id}','AbsennovController@hapus');
