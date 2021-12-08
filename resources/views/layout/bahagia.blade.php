@@ -80,8 +80,8 @@
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="pegawai">Pegawai</a>
-            <a href="absen">Absen</a>
+            <a href="/pegawai">Pegawai</a>
+            <a href="/absen">Absen</a>
             <a href="#">Minggu Depan</a>
             <a href="#">Praktikum</a>
         </div>
