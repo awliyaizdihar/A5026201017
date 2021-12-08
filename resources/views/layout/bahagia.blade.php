@@ -101,7 +101,7 @@
                 <div class="p-2 mr-auto"><span style="cursor:pointer" onclick="openNav()">&#9776; MENU</span></div>
                 <div class="p-2">AWLIYA HANUN IZDIHAR</div>
                 <div class="p-2">5026201017</div>
-                <div class="p-2"><img src="images/pas11.jpg" class="rounded-circle" alt="Foto diri mahasiswa"
+                <div class="p-2"><img src="{{ asset('images/pas11.jpg') }}" class="rounded-circle" alt="Foto diri mahasiswa"
                         height="50"></div>
             </div>
         </header>
