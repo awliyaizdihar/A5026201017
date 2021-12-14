@@ -82,7 +82,7 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="/pegawai">Pegawai</a>
             <a href="/absen">Absen</a>
-            <a href="/mouse">Praktikum</a>
+            <a href="/mouse">Mouse</a>
         </div>
 
         <script>
