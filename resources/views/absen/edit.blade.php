@@ -5,7 +5,7 @@
 
 @section('konten')
 
-<a href="/absen" class="btn btn-info float-left"> Kembali</a>
+<a href="/absen" class="btn btn-info float-left">Kembali</a>
 
 <br />
 <br />

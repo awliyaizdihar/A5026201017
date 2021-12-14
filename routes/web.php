@@ -37,6 +37,8 @@ Route::post('/pegawai/store','PegawaiController@store');
 Route::get('/pegawai/edit/{id}','PegawaiController@edit');
 Route::post('/pegawai/update','PegawaiController@update');
 Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
+Route::get('/pegawai/cari','PegawaiController@cari');
+Route::get('/pegawai/view/{id}','PegawaiController@detail');
 
 //route CRUD absen
 Route::get('/absen','AbsenController@index');
@@ -45,6 +47,18 @@ Route::post('/absen/store','AbsenController@store');
 Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
+Route::get('/absen/cari','AbsenController@cari');
+Route::get('/absen/view/{id}','AbsenController@detail');
+
+//route CRUD mouse
+Route::get('/mouse','MouseController@index');
+Route::get('/mouse/cari','MouseController@cari');
+Route::get('/mouse/tambah','MouseController@tambah');
+Route::post('/mouse/store','MouseController@store');
+Route::get('/mouse/edit/{id}','MouseController@edit');
+Route::post('/mouse/update','MouseController@update');
+Route::get('/mouse/view/{id}','MouseController@detail');
+Route::get('/mouse/hapus/{id}','MouseController@hapus');
 
 //route CRUD absennov
 Route::get('/absennov','AbsennovController@indexabsen');
