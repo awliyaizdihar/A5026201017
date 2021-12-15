@@ -60,6 +60,12 @@ Route::post('/mouse/update','MouseController@update');
 Route::get('/mouse/view/{id}','MouseController@detail');
 Route::get('/mouse/hapus/{id}','MouseController@hapus');
 
+//route CRUD keranjangbelanja
+Route::get('/keranjangbelanja','KeranjangController@index');
+Route::get('/keranjangbelanja/tambah','KeranjangController@tambah');
+Route::post('/keranjangbelanja/store','KeranjangController@store');
+Route::get('/keranjangbelanja/hapus/{id}','KeranjangController@hapus');
+
 //route CRUD absennov
 Route::get('/absennov','AbsennovController@indexabsen');
 Route::get('/absennov/add','AbsennovController@add');

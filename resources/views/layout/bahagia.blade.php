@@ -83,6 +83,7 @@
             <a href="/pegawai">Pegawai</a>
             <a href="/absen">Absen</a>
             <a href="/mouse">Mouse</a>
+            <a href="/keranjangbelanja">Keranjang Belanja</a>
         </div>
 
         <script>
